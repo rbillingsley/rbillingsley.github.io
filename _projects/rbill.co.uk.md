@@ -10,6 +10,6 @@ tags:
 max-width="200px" file="/assets/images/test.png" alt="Test image"
 caption="" %} 
 
-This website is built using Jekyll and hosted on GitHub Pages.
+Placeholder. This website is built using Jekyll and hosted on GitHub Pages.
 
 <!--excerpt-->
