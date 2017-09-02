@@ -21,13 +21,30 @@ description: "Website in development."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "rbillingsley.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username:
-github_username:  rbillingsley
+github_username: rbillingsley
+linkedin_username: Russell-Billingsley
 
 # Build settings
 markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+
+collections:
+  projects:
+    output: true
+
+defaults:
+  - scope:
+      type: project
+    values:
+      layout: post
+  - scope:
+      path: images
+    values:
+      image: true
+
+excerpt_separator: <!--excerpt-->
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

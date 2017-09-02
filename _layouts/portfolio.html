@@ -1,0 +1,30 @@
+---
+layout: page
+---
+<div class="portfolio">
+    
+      {{ content }}
+
+<!--       <ul>
+        {% for post in site.projects %}
+          <li>{{ post.tags }}</li>
+        {% endfor %}
+      </ul> -->
+
+      <ul class="post-list">
+        {% for post in site.projects %}
+          <li>
+            {% assign date_format = "%Y" %}
+            <span class="post-meta">{{ post.date | date: date_format }}</span>
+            <h2 class="post-content">
+              <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+              {{ post.tags }}
+              {{ post.excerpt }}
+              {% assign image = post.images[0] %}
+              {% include image.html image=image %}
+            </h2>
+          </li>
+        {% endfor %}
+      </ul>
+    
+</div>
