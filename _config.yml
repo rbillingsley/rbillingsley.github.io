@@ -36,7 +36,7 @@ collections:
 
 defaults:
   - scope:
-      type: project
+      type: portfolio
     values:
       layout: post
   - scope:

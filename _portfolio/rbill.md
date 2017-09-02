@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "rbill.co.uk"
+title: "rbill website"
 date: 2017-1-1
 tags: 
     - c++
