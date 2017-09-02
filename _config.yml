@@ -35,6 +35,7 @@ collections:
     output: true
 
 defaults:
+  - projects:
       output: true
     values:
       layout: post
