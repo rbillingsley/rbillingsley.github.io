@@ -23,6 +23,7 @@ url: "rbillingsley.github.io" # the base hostname & protocol for your site, e.g.
 # twitter_username:
 github_username: rbillingsley
 linkedin_username: Russell-Billingsley
+email: r-bill@outlook.com
 
 # Build settings
 markdown: kramdown
