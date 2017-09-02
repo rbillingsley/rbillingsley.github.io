@@ -35,8 +35,7 @@ collections:
     output: true
 
 defaults:
-  - scope:
-      type: portfolio
+      output: true
     values:
       layout: post
   - scope:
