@@ -2,31 +2,37 @@
 layout: page
 ---
 <div class="portfolio">
-    
-      {{ content }}
+  {% assign date_format = "%Y" %}
+  {% assign last_post_date = 0 %}
 
-      <ul class="portfolio-list">
-        {% for post in site.projects reversed %}
-          <li>
-            {% assign date_format = "%Y" %}
-            <span class="portfolio-meta">{{ post.date | date: date_format }}</span>
-            <h2 class="portfolio-content">
-              <a class="portfolio-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-              {% include tech.html tags=post.tags %}
-              <div>
-              {% if post.github-link %}
-                {% include icon-github.html username=site.github_username repo_link=post.github-link %}
-              {% endif %}
-              </div>
-              <div>
-              {% if post.images != null %}
-                {% include image.html file=post.images.first max-width="200px"%} 
-              {% endif %}
-              </div>
-              {{ post.excerpt }}
-            </h2>
-          </li>
-        {% endfor %}
-      </ul>
-    
+  {{ content }}
+
+  <ul class="portfolio-list">
+    {% for post in site.projects reversed %}
+      <li>
+        {% assign current_post_date = post.date | date: date_format %}
+        {% if current_post_date != last_post_date %}
+          <span class="portfolio-meta">{{ current_post_date }}</span>
+          {% assign last_post_date = current_post_date %}
+        {% endif %}
+        <h2 class="portfolio-content">
+          <a class="portfolio-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          {% include tech.html tags=post.tags %}
+          <div class="portfolio-github">
+          {% if post.github-link %}
+            {% include icon-github.html username=site.github_username repo_link=post.github-link %}
+          {% endif %}
+          </div>
+          {% if post.images != null %}
+            <div class="portfolio-image-preview">
+              {% include image.html file=post.images.first max-width="200px"%} 
+            </div>
+          {% endif %}
+          <div class="portfolio-description">
+            {{ post.description }}
+          </div>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
 </div>

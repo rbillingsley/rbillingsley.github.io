@@ -3,7 +3,7 @@
  */
  .site-header {
     border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
+    border-bottom: 1px solid $grey-color-dark;
     min-height: $spacing-unit * 1.865;
   
     // Positioning context for the mobile navigation icon
@@ -227,6 +227,8 @@
   .portfolio-meta {
     font-size: $small-font-size;
     color: $grey-color;
+    border-top: 1px solid;
+    border-top-color: $grey-color;
   }
   
   .portfolio-link {
@@ -305,16 +307,22 @@
   
   .portfolio-tags { 
     @include relative-font-size(1);
+    margin-bottom: 0;
     }
+
+  .portfolio-image-preview {
+    text-align: center;
+    margin-top: $spacing-unit;
+  }  
+
+  .portfolio-description {
+    margin-top: $spacing-unit;
+  }
 
   .portfolio-content {
     margin-bottom: $spacing-unit;
-
-    img {
-      max-width: 100%;
-      vertical-align: middle;
-      float: center;
-    }
+    border-top: 1px solid;
+    border-top-color: $grey-color-dark;
 
     h2 {
       @include relative-font-size(1);
