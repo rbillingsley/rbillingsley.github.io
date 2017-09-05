@@ -31,6 +31,8 @@ theme: minima
 plugins:
   - jekyll-feed
 
+exclude: [vendor]
+
 collections:
   projects:
     output: true
