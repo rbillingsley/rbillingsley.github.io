@@ -13,12 +13,17 @@ layout: page
             <h2 class="portfolio-content">
               <a class="portfolio-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
               {% include tech.html tags=post.tags %}
+              <div>
+              {% if post.github-link %}
+                {% include icon-github.html username=site.github_username repo_link=post.github-link %}
+              {% endif %}
+              </div>
+              <div>
               {% if post.images != null %}
                 {% include image.html file=post.images.first max-width="200px"%} 
               {% endif %}
+              </div>
               {{ post.excerpt }}
-              <!-- {% assign image = post.images[0] %}
-              {% include image.html image=image %} -->
             </h2>
           </li>
         {% endfor %}
