@@ -6,7 +6,7 @@ layout: page
       {{ content }}
 
       <ul class="portfolio-list">
-        {% for post in site.projects %}
+        {% for post in site.projects reversed %}
           <li>
             {% assign date_format = "%Y" %}
             <span class="portfolio-meta">{{ post.date | date: date_format }}</span>
