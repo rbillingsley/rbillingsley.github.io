@@ -1,6 +1,10 @@
-<p class="portfolio-tags">
+<p>
     Technologies: 
     {% for tag in include.tags %}
-        {{ tag }}
+        {% if tag != include.tags.last %}
+            {{ tag }},
+        {% else %}
+            {{ tag }}.
+        {% endif %}
     {% endfor %}
 </p>

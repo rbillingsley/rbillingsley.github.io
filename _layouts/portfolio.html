@@ -17,7 +17,9 @@ layout: page
         {% endif %}
         <h2 class="portfolio-content">
           <a class="portfolio-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-          {% include tech.html tags=post.tags %}
+          <div class="portfolio-tags">
+            {% include tech.html tags=post.tags %}
+          </div>
           <div class="portfolio-github">
           {% if post.github-link %}
             {% include icon-github.html username=site.github_username repo_link=post.github-link %}

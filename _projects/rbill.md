@@ -11,5 +11,4 @@ tags:
 images:
     - "../assets/images/test.png"
 
-description: "This website is built using Jekyll and hosted on GitHub Pages."
 ---

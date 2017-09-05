@@ -3,7 +3,7 @@
  */
  .site-header {
     border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-dark;
+    border-bottom: 1px solid $grey-color-light;
     min-height: $spacing-unit * 1.865;
   
     // Positioning context for the mobile navigation icon
@@ -215,6 +215,12 @@
     @include relative-font-size(1.5);
   }
 
+  .post-tags { 
+    @include relative-font-size(1);
+    margin-bottom: 0;
+    color: $grey-color;
+  }
+
   .portfolio-list {
     margin-left: 0;
     list-style: none;
@@ -225,10 +231,8 @@
   }
   
   .portfolio-meta {
-    font-size: $small-font-size;
+    @include relative-font-size(1);;
     color: $grey-color;
-    border-top: 1px solid;
-    border-top-color: $grey-color;
   }
   
   .portfolio-link {
@@ -308,10 +312,10 @@
   .portfolio-tags { 
     @include relative-font-size(1);
     margin-bottom: 0;
-    }
+    color: $grey-color;
+  }
 
   .portfolio-image-preview {
-    text-align: center;
     margin-top: $spacing-unit;
   }  
 
@@ -322,7 +326,7 @@
   .portfolio-content {
     margin-bottom: $spacing-unit;
     border-top: 1px solid;
-    border-top-color: $grey-color-dark;
+    border-top-color: $grey-color-light;
 
     h2 {
       @include relative-font-size(1);
