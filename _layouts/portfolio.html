@@ -12,9 +12,11 @@ layout: page
             <span class="portfolio-meta">{{ post.date | date: date_format }}</span>
             <h2 class="portfolio-content">
               <a class="portfolio-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+              <p class="portfolio-tags" href="">
               {% for tag in post.tags %}
-                <a class="portfolio-tags" href=""> {{ tag }}</a>
+                {{ tag }}
               {% endfor %}
+              </p>
               {{ post.excerpt }}
               <!-- {% assign image = post.images[0] %}
               {% include image.html image=image %} -->
