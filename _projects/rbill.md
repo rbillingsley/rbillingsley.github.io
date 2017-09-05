@@ -1,10 +1,17 @@
 ---
 layout: post
-title: "rbill website"
+title: "Personal Website"
 date: 2017-1-1
+github-link: rbillingsley.github.io
 tags: 
-    - c++
+    - Ruby
+    - Jekyll
+    - HTML
+    - CSS
 ---
+{% if page.github-link %}
+    {% include icon-github.html username=site.github_username repo_link=page.github-link %}
+{% endif %}
 
 {% include image.html url=site.url
 max-width="200px" file="/assets/images/test.png" alt="Test image"

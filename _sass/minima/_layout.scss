@@ -131,13 +131,12 @@
   }
 
   .footer-row {
-    float: center;
+    float: left;
     margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
   }
 
   .footer-row-1 {
-    text-align: center;
+    text-align: left;
     width: -webkit-calc(35% - (#{$spacing-unit} / 2));
     width:         calc(35% - (#{$spacing-unit} / 2));
   }
@@ -149,7 +148,7 @@
   }
   
   .footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(100%);
     width:         calc(35% - (#{$spacing-unit} / 2));
   }
   
@@ -215,6 +214,25 @@
     display: block;
     @include relative-font-size(1.5);
   }
+
+  .portfolio-list {
+    margin-left: 0;
+    list-style: none;
+  
+    > li {
+      margin-bottom: $spacing-unit;
+    }
+  }
+  
+  .portfolio-meta {
+    font-size: $small-font-size;
+    color: $grey-color;
+  }
+  
+  .portfolio-link {
+    display: block;
+    @include relative-font-size(1.5);
+  }
   
   
   
@@ -226,7 +244,7 @@
   }
   
   .post-title {
-    @include relative-font-size(1);
+    @include relative-font-size(2);
     letter-spacing: -1px;
     line-height: 1;
   
@@ -237,12 +255,72 @@
   
   .post-content {
     margin-bottom: $spacing-unit;
+
+    img {
+      max-width: 100%;
+      vertical-align: middle;
+      float: center;
+    }
   
     h2 {
-      @include relative-font-size(1.5);
+      @include relative-font-size(1);
   
       @include media-query($on-laptop) {
-        @include relative-font-size(1.75);
+        @include relative-font-size(1);
+      }
+    }
+  
+    h3 {
+      @include relative-font-size(1.625);
+  
+      @include media-query($on-laptop) {
+        @include relative-font-size(1.375);
+      }
+    }
+  
+    h4 {
+      @include relative-font-size(1.25);
+  
+      @include media-query($on-laptop) {
+        @include relative-font-size(1.125);
+      }
+    }
+
+  /**
+  * Portfolio
+  */
+  .portfolio-header {
+    margin-bottom: $spacing-unit;
+  }
+  
+  .portfolio-title {
+    @include relative-font-size(2);
+    letter-spacing: -1px;
+    line-height: 1;
+  
+    @include media-query($on-laptop) {
+      @include relative-font-size(2.25);
+    }
+  }
+  
+  .portfolio-tags { 
+    @include relative-font-size(1);
+    }
+
+  .portfolio-content {
+    margin-bottom: $spacing-unit;
+
+    img {
+      max-width: 100%;
+      vertical-align: middle;
+      float: center;
+    }
+
+    h2 {
+      @include relative-font-size(1);
+  
+      @include media-query($on-laptop) {
+        @include relative-font-size(1);
       }
     }
   
@@ -262,3 +340,4 @@
       }
     }
   }
+}
