@@ -8,7 +8,7 @@ layout: page
   {{ content }}
 
   <ul class="portfolio-list">
-    {% for post in site.projects reversed %}
+    {% for post in site.portfolio reversed %}
       <li>
         {% assign current_post_date = post.date | date: date_format %}
         {% if current_post_date != last_post_date %}

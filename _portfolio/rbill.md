@@ -9,6 +9,6 @@ tags:
     - HTML
     - CSS
 images:
-    - "../assets/images/test.png"
+    - "../../assets/images/test.png"
 
 ---
