@@ -4,8 +4,8 @@ title: "Personal Website"
 date: 2017-1-1
 github-link: rbillingsley.github.io
 tags: 
-    - Ruby
     - Jekyll
+    - Liquid
     - HTML
     - CSS
 images:

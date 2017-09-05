@@ -31,14 +31,17 @@ theme: minima
 plugins:
   - jekyll-feed
 
-exclude: [vendor]
-
+exclude:
+  - [vendor]
+  - README.md
+  
 collections:
-  projects:
+  portfolio:
     output: true
+    permalink: /portfolio/:title/
 
 defaults:
-  - projects:
+  - portfolio:
       output: true
     values:
       layout: post
