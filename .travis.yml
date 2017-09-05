@@ -2,10 +2,8 @@ language: ruby
 rvm:
 - 2.3.3
 
-# Assume bundler is being used, therefore
-# the `install` step will run `bundle install` by default.
-install: gem install jekyll
-script: jekyll build
+install: gem install jekyll bundler
+script: bundle exec jekyll build
 
 # branch whitelist, only for GitHub Pages
 branches:
