@@ -9,6 +9,8 @@ tags:
     - HTML
     - CSS
 images:
-    - "../../assets/images/test.png"
+    - "../../assets/images/website.png"
+
+description: "Website currently in development."
 
 ---

@@ -21,9 +21,6 @@ layout: default
     </header>
 
     <div class="portfolio-content" itemprop="articleBody">
-      {% if page.images != null %}
-        {% include image.html file=page.images.first max-width="200px"%} 
-      {% endif %}
       {{ content }}
     </div>
     {% if page.images != null %}

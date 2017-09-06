@@ -1,8 +1,15 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 ---
 
-I'll be back in a jiffy!
+{%include image.html max-width="200px" file="/assets/images/rb.jpg" alt="" caption="" %}
+
+# Welcome!
+
+My name is Russell Billingsley, I'm a Software Engineer with a BSc in Computer Science with Games Development.
+
+My technical history is graphics and games focused, but I enjoy a wide variety of software development areas, such as web and application development.
+
+My [CV can be found here](../CV/), and my [Portfolio is located here](../portfolio).
+
+If you would like to contact me please do so using the icons below in the footer. 
