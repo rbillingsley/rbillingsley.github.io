@@ -7,10 +7,17 @@ tags:
     - Jekyll
     - Liquid
     - HTML
-    - CSS
-images:
+    - CSS/SASS
+    - TravisCI
+images: 
     - "../../assets/images/website.png"
+    - "../../assets/images/rb.jpg"
 
-description: "Website currently in development."
-
+description: "Personal Website built to house CV and portfolio."
 ---
+
+This website has been built to house my CV, portfolio, contact information, and eventually a blog for technical writing. The design is simple and minimal to focus on the content, this is a slightly altered version of the Jekyll theme "Minima". This website is built using Jekyll and is hosted on GitHub-Pages.
+
+{% include image.html file=page.images.first max-width="50%"%}
+
+The alterations include the custom portfolio and portfolio-post pages to house portfolio pieces, this was done so that the portfolio pieces exist in their own collection on the site, which allows me to use Jekyll's built in powerful blog infrastructure rather than overloading it for my portfolio. These additional pages are built using HTML and Liquid. Additional html fragment files are used to include images, the icons for GitHub links on portfolio pages and the listing of the technologies used on each project. Building this website has also given me some experience with [SASS](http://sass-lang.com/) and [TravisCI](https://travis-ci.org/).

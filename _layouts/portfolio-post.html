@@ -19,16 +19,8 @@ layout: default
           {% endif %}
         </div>
     </header>
-
     <div class="portfolio-content" itemprop="articleBody">
       {{ content }}
     </div>
-    {% if page.images != null %}
-    <div class="post-gallery">
-        <h2 class="post-gallery-title"> Project Gallery </h2>
-        {% for image in page.images %}
-            {% include image.html file=image max-width="200px"%} 
-        {% endfor %}
-    </div>
-    {% endif %}
+
 </article>

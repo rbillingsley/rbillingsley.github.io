@@ -1,0 +1,8 @@
+{% if include.images != null %}
+<div class="gallery">
+    <h2 class="gallery-title"> Gallery </h2>
+    {% for image in include.images %}
+        {% include image.html file=image max-width="200px"%} 
+    {% endfor %}
+</div>
+{% endif %}

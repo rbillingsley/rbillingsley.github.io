@@ -7,7 +7,7 @@ tags:
     - JavaScript
     - Node
     - React
-    - HTML
+    - Mocha
 
 description: "Web app currently in development."
 ---

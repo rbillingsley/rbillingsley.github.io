@@ -33,6 +33,7 @@ layout: page
           <div class="portfolio-description">
             {{ post.description }}
           </div>
+          <a class="portfolio-link-button" href="{{ post.url | relative_url }}">More Info</a>
         </h2>
       </li>
     {% endfor %}

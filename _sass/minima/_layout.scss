@@ -230,16 +230,6 @@
     }
   }
   
-  .portfolio-meta {
-    @include relative-font-size(1);;
-    color: $grey-color;
-  }
-  
-  .portfolio-link {
-    display: block;
-    @include relative-font-size(1.5);
-  }
-  
   
   
   /**
@@ -313,6 +303,28 @@
     @include relative-font-size(1);
     margin-bottom: 0;
     color: $grey-color;
+  }
+
+  .portfolio-meta {
+    @include relative-font-size(1);;
+    color: $grey-color;
+  }
+  
+  .portfolio-link {
+    display: block;
+    @include relative-font-size(1.5);
+  }
+
+  .portfolio-link-button {
+    @include relative-font-size(1.1);
+    display: inline-block;
+    margin-top: 1%;
+    color: $grey-color-dark;
+    background-color: $grey-color-light;
+    border: 1px solid $grey-color-dark;
+    text-decoration: none;
+    padding-left:3px;
+    padding-right:3px;
   }
 
   .portfolio-image-preview {
