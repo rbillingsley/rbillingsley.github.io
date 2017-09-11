@@ -6,7 +6,10 @@ tags:
     - HTML5
     - JavaScript
 
-description: "A HTML5 Canvas project created as University Coursework."
+description: "A HTML5 Canvas project originally created as University Coursework."
+
+images: 
+    - "../../assets/images/arc1.png"
 ---
 
 [Take a look at the Orrery.](https://www.rbill.co.uk/orrery/)
