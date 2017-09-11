@@ -31,9 +31,7 @@ theme: minima
 plugins:
   - jekyll-feed
 
-exclude:
-  - [vendor]
-  - README.md
+exclude: [[vendor], README.md]
   
 collections:
   portfolio:
