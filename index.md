@@ -2,7 +2,7 @@
 layout: home
 ---
 
-{%include image.html max-width="200px" file="/assets/images/rb.jpg" alt="" caption="" %}
+{% include image.html file="/assets/images/rb.jpg" max-width="200px" %}
 
 # Welcome!
 

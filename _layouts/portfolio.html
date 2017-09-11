@@ -25,9 +25,14 @@ layout: page
             {% include icon-github.html username=site.github_username repo_link=post.github-link %}
           {% endif %}
           </div>
+          {% if post.web-link != null %}
+          <div class="portfolio-weblink">
+            {% include icon-rb.html link=post.web-link %} 
+          </div>
+          {% endif %}
           {% if post.images != null %}
             <div class="portfolio-image-preview">
-              {% include image.html file=post.images.first max-width="200px"%} 
+              {% include image.html file=post.images.first max-width="200px" %} 
             </div>
           {% endif %}
           <div class="portfolio-description">

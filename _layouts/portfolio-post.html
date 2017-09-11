@@ -18,6 +18,11 @@ layout: default
             {% include icon-github.html username=site.github_username repo_link=page.github-link %}
           {% endif %}
         </div>
+        <div class="portfolio-weblink">
+          {% if page.github-link %}
+            {% include icon-rb.html link=page.web-link %} 
+          {% endif %}
+        </div>
     </header>
     <div class="portfolio-content" itemprop="articleBody">
       {{ content }}
