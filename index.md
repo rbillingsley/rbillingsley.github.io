@@ -1,6 +1,8 @@
 ---
 layout: home
+title: Home
 ---
+# Welcome!
 
 My name is Russell Billingsley, I'm a Software Engineer with a BSc in Computer Science with Games Development.
 
