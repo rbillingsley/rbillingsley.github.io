@@ -1,6 +1,6 @@
 ---
 layout: portfolio-post
-title: "VR Intern Project"
+title: "VR Internship Project"
 date: 2014-6-1
 tags: 
     - C#
@@ -15,5 +15,5 @@ images:
     - "../../assets/images/brickrift.jpg"
     - "../../assets/images/brickcave.jpg"
 
-description: "A volume renderer for VR and custom displays built in Unity3D."
+description: "An indirect volume renderer for VR and custom displays built in Unity3D."
 ---

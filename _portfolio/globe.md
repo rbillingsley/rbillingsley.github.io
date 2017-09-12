@@ -9,10 +9,10 @@ tags:
 
 type: game
 
-include: false
+include: true
 
 images:
-    - "../../assets/images/place.png"
+    - "../../assets/images/globe1.png"
 
 description: "A DirectX 11 app rendering a Desert Snow Globe and effects. (Coursework)"
 
