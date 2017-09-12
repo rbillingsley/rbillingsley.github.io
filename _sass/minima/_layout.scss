@@ -282,13 +282,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
+    margin-left: 0px;
 
     > li {
       vertical-align: top;
       margin: 5px;
       padding: 5px;
       border: solid #000 5px;
-      width:30%
+      max-width: 25%;
+      min-width: 300px;
     }
   }
 
@@ -311,7 +313,7 @@
     margin-bottom: 0px;
 
     .portfolio-description {
-      height: 48px;
+      min-height: 48px;
     }
     .portfolio-tags { 
       @include relative-font-size(1);
