@@ -1,6 +1,6 @@
 ---
 layout: portfolio-post
-title: "Three Thing Game Entries"
+title: "Game Jam Entries"
 date: 2012-1-1
 tags: 
     - C#
