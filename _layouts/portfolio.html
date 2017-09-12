@@ -2,20 +2,24 @@
 layout: page
 ---
 <div class="portfolio">
+  <div class="portfolio-type">Graphics/Game/Engine</div>
   <ul class="portfolio-list">
-    <div class="portfolio-type">Graphics/Game/Engine</div>
     {% for entry in site.portfolio reversed %}
       {% if entry.type == "game" %}
         {% include portfolio-list.html post=entry %}
       {% endif  %}
     {% endfor %}
-    <div class="portfolio-type">App</div>
+  </ul>
+  <div class="portfolio-type">App</div>
+  <ul class="portfolio-list">
     {% for entry in site.portfolio reversed %}
       {% if entry.type == "app" %}
         {% include portfolio-list.html post=entry %}
       {% endif  %}
     {% endfor %}
-    <div class="portfolio-type">Misc</div>
+  </ul>
+  <div class="portfolio-type">Misc</div>
+  <ul class="portfolio-list">
     {% for entry in site.portfolio reversed %}
       {% if entry.type == "misc" %}
         {% include portfolio-list.html post=entry %}

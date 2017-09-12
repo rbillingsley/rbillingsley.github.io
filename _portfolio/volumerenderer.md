@@ -12,6 +12,7 @@ type: game
 include: true
 
 images: 
+    - "../../assets/images/volfeature.png"
     - "../../assets/images/vol1.png"
     - "../../assets/images/vol2.png"
     - "../../assets/images/vol3.png"

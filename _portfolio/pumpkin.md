@@ -11,7 +11,7 @@ type: game
 include: true
 
 images: 
-    - "../../assets/images/pumpkins.jpg"
+    - "../../assets/images/pumpkinfeature.jpg"
 
-description: "A shader based graphics project for learning GLSL. (Coursework)"
---- 
+description: "A shader based graphics project for learning GLSL."
+---

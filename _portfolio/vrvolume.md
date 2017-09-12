@@ -12,8 +12,9 @@ type: game
 include: true
 
 images: 
+    - "../../assets/images/vrfeature.png"
     - "../../assets/images/brickrift.jpg"
     - "../../assets/images/brickcave.jpg"
 
-description: "An indirect volume renderer for VR and custom displays built in Unity3D."
+description: "A volume renderer for VR built in Unity3D."
 ---

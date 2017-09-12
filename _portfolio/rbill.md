@@ -15,8 +15,7 @@ type: misc
 include: true
 
 images: 
-    - "../../assets/images/website.png"
-    - "../../assets/images/rb.jpg"
+    - "../../assets/images/webfeature.png"
 
 description: "Personal Website built to house CV and portfolio."
 ---

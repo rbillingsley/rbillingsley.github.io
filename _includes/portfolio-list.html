@@ -5,12 +5,13 @@
       <div class="portfolio-tags">
         {% include tech.html tags=include.post.tags %}
       </div>
+      <div class="portfolio-description">
+          {{ include.post.description }}
+        </div>
       {% if include.post.images != null %}
         {% include image.html file=include.post.images.first %} 
       {% endif %}
-      <div class="portfolio-description">
-        {{ include.post.description }}
-      </div>
+      <a class="portfolio-link-button" href="{{ include.post.url | relative_url }}">Read More</a>
     </h2>
 </li>
 {% endif %}

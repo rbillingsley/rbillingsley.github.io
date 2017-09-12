@@ -189,13 +189,6 @@
    * Page content
    */
 
-   @include media-query($on-palm) {
-    .page-content {
-      padding: $spacing-unit 0;
-      width: $on-palm
-    }
-  }
-
   .page-content {
     padding: $spacing-unit 0;
   }
@@ -281,20 +274,21 @@
 
   .portfolio-type {
     @include relative-font-size(1.8);
+    display: block;
   }
 
   .portfolio-list {
-    margin-left: 0;
     list-style: none;
-  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+
     > li {
-      display: inline-block;
       vertical-align: top;
       margin: 5px;
       padding: 5px;
       border: solid #000 5px;
-      width: 400px;
-      height: 400px;
+      width:30%
     }
   }
 
@@ -314,9 +308,9 @@
 
   .portfolio-content {
 
+    margin-bottom: 0px;
     .portfolio-tags { 
       @include relative-font-size(1);
-      position: relative;
       color: $grey-color;
     }
   
@@ -326,39 +320,26 @@
     }
     
     .portfolio-link {
-      position: relative;
       display: block;
       @include relative-font-size(1.5);
     }
   
     .portfolio-link-button {
       @include relative-font-size(1.1);
-      float: right;
+      display: inline-block;
       margin-top: 1%;
-      color: $grey-color;
-      border: 1px solid $grey-color;
+      color: #000;
+      border: 2px solid #000;
       text-decoration: none;
       padding-left:3px;
       padding-right:3px;
     }
-  
-    .portfolio-image-preview {
-    }  
-  
-    .portfolio-description {
-      vertical-align: bottom;
-      max-height: 20px;
-    }
 
     img {
-      position: relative;
-      display: block;
-      padding-left: 25px;
-      padding-right: 25px;
-      max-width: 350px;
-      max-height: 250px;
-      margin-bottom: 20px;
-      margin-top: 20px;
+      display: flex;
+      border: 2px solid #000;
+      max-width: 95%;
+      height: auto;
     }
 
     h2 {

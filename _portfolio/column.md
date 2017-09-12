@@ -14,5 +14,5 @@ include: false
 images:
     - "../../assets/images/place.png"
 
-description: "A C# OpenGL 3D Graphics program. (Coursework)"
+description: "A C# OpenGL 3D Graphics program."
 ---

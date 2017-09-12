@@ -13,5 +13,5 @@ include: false
 images:
     - "../../assets/images/place.png"
 
-description: "An Android app for E-Health reporting. (Coursework)"
+description: "An Android app for E-Health reporting."
 ---

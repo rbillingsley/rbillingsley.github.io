@@ -9,10 +9,10 @@ tags:
 
 type: game
 
-include: false
+include: true
 
 images:
-    - "../../assets/images/place.png"
+    - "../../assets/images/ttgfeature.jpg"
 
-description: "A collection of 24hr game jam entries made with a team."
+description: "24hr game jam entries made with a team."
 ---

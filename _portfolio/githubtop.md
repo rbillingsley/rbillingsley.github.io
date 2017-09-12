@@ -14,7 +14,7 @@ type: app
 include: true
 
 images:
-    - "../../assets/images/ghtop.png"
+    - "../../assets/images/ghtopfeature.png"
 
-description: "A web app that I created to learn modern JS, Node, React, Mocha, and get some exerience with the GitHub APIs."
+description: "A web app for learning modern web dev."
 ---

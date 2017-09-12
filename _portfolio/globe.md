@@ -12,8 +12,8 @@ type: game
 include: true
 
 images:
-    - "../../assets/images/globe1.png"
+    - "../../assets/images/globefeature.png"
 
-description: "A DirectX 11 app rendering a Desert Snow Globe and effects. (Coursework)"
+description: "A DirectX 11 renderer."
 
 ---
