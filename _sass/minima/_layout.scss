@@ -188,6 +188,14 @@
   /**
    * Page content
    */
+
+   @include media-query($on-palm) {
+    .page-content {
+      padding: $spacing-unit 0;
+      width: $on-palm
+    }
+  }
+
   .page-content {
     padding: $spacing-unit 0;
   }
