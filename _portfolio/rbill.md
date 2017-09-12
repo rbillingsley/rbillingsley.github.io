@@ -9,6 +9,11 @@ tags:
     - HTML
     - CSS/SASS
     - TravisCI
+
+type: misc
+
+include: true
+
 images: 
     - "../../assets/images/website.png"
     - "../../assets/images/rb.jpg"

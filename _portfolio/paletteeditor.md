@@ -9,5 +9,12 @@ tags:
     - React
     - Mocha
 
+type: app
+
+include: false
+
+images:
+    - "../../assets/images/place.png"
+
 description: "Web app currently in development."
 ---

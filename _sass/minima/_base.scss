@@ -210,11 +210,13 @@
  
  .social-media-list {
    .icon {
+     display: inline-block;
      padding-right: 5px;
    }
  
    li + li {
-     padding-top: 5px;
+    display: inline-block;
+    padding-top: 5px;
    }
  }
  

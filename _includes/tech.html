@@ -1,10 +1,8 @@
-<p>
-    Technologies: 
-    {% for tag in include.tags %}
-        {% if tag != include.tags.last %}
-            {{ tag }},
-        {% else %}
-            {{ tag }}.
-        {% endif %}
-    {% endfor %}
-</p>
+Technologies: 
+{% for tag in include.tags %}
+    {% if tag != include.tags.last %}
+        {{ tag }},
+    {% else %}
+        {{ tag }}.
+    {% endif %}
+{% endfor %}

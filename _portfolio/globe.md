@@ -7,6 +7,13 @@ tags:
     - DirectX 11
     - HLSL
 
-description: "A DirectX 11 app rendering a Desert Snow Globe and effects. Originally for University Coursework"
+type: game
+
+include: false
+
+images:
+    - "../../assets/images/place.png"
+
+description: "A DirectX 11 app rendering a Desert Snow Globe and effects. (Coursework)"
 
 ---

@@ -1,0 +1,16 @@
+{% if include.post.include == true %}
+<li>
+    <h2 class="portfolio-content">
+      <a class="portfolio-link" href="{{ include.post.url | relative_url }}">{{ include.post.title | escape }}</a>
+      <div class="portfolio-tags">
+        {% include tech.html tags=include.post.tags %}
+      </div>
+      {% if include.post.images != null %}
+        {% include image.html file=include.post.images.first %} 
+      {% endif %}
+      <div class="portfolio-description">
+        {{ include.post.description }}
+      </div>
+    </h2>
+</li>
+{% endif %}

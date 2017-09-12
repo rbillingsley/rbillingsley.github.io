@@ -2,10 +2,6 @@
 layout: home
 ---
 
-{% include image.html file="/assets/images/rb.jpg" max-width="200px" %}
-
-# Welcome!
-
 My name is Russell Billingsley, I'm a Software Engineer with a BSc in Computer Science with Games Development.
 
 My technical history is graphics and games focused, but I enjoy a wide variety of software development areas, such as web and application development.

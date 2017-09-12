@@ -7,5 +7,12 @@ tags:
     - XNA
     - Windows Phone 7
 
+type: game
+
+include: false
+
+images:
+    - "../../assets/images/place.png"
+
 description: "A collection of 24hr game jam entries made with a team."
 ---

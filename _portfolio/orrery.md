@@ -8,7 +8,11 @@ tags:
     - HTML5
     - JavaScript
 
-description: "A HTML5 Canvas project originally created as University Coursework."
+type: game
+
+include: true
+
+description: "A HTML5 Canvas project depicting the solar system. (Coursework)."
 
 images: 
     - "../../assets/images/arc1.png"

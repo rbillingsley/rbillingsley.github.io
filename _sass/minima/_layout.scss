@@ -220,15 +220,6 @@
     margin-bottom: 0;
     color: $grey-color;
   }
-
-  .portfolio-list {
-    margin-left: 0;
-    list-style: none;
-  
-    > li {
-      margin-bottom: $spacing-unit;
-    }
-  }
   
   
   
@@ -251,12 +242,6 @@
   
   .post-content {
     margin-bottom: $spacing-unit;
-
-    img {
-      max-width: 100%;
-      vertical-align: middle;
-      float: center;
-    }
   
     h2 {
       @include relative-font-size(1);
@@ -285,6 +270,26 @@
   /**
   * Portfolio
   */
+
+  .portfolio-type {
+    @include relative-font-size(1.8);
+  }
+
+  .portfolio-list {
+    margin-left: 0;
+    list-style: none;
+  
+    > li {
+      display: inline-block;
+      vertical-align: top;
+      margin: 5px;
+      padding: 5px;
+      border: solid #000 5px;
+      width: 400px;
+      height: 400px;
+    }
+  }
+
   .portfolio-header {
     margin-bottom: $spacing-unit;
   }
@@ -298,46 +303,55 @@
       @include relative-font-size(2.25);
     }
   }
-  
-  .portfolio-tags { 
-    @include relative-font-size(1);
-    margin-bottom: 0;
-    color: $grey-color;
-  }
-
-  .portfolio-meta {
-    @include relative-font-size(1);;
-    color: $grey-color;
-  }
-  
-  .portfolio-link {
-    display: block;
-    @include relative-font-size(1.5);
-  }
-
-  .portfolio-link-button {
-    @include relative-font-size(1.1);
-    display: inline-block;
-    margin-top: 1%;
-    color: $grey-color;
-    border: 1px solid $grey-color;
-    text-decoration: none;
-    padding-left:3px;
-    padding-right:3px;
-  }
-
-  .portfolio-image-preview {
-    margin-top: $spacing-unit;
-  }  
-
-  .portfolio-description {
-    margin-top: $spacing-unit;
-  }
 
   .portfolio-content {
-    margin-bottom: $spacing-unit;
-    border-top: 1px solid;
-    border-top-color: $grey-color-light;
+
+    .portfolio-tags { 
+      @include relative-font-size(1);
+      position: relative;
+      color: $grey-color;
+    }
+  
+    .portfolio-meta {
+      @include relative-font-size(1);;
+      color: $grey-color;
+    }
+    
+    .portfolio-link {
+      position: relative;
+      display: block;
+      @include relative-font-size(1.5);
+    }
+  
+    .portfolio-link-button {
+      @include relative-font-size(1.1);
+      float: right;
+      margin-top: 1%;
+      color: $grey-color;
+      border: 1px solid $grey-color;
+      text-decoration: none;
+      padding-left:3px;
+      padding-right:3px;
+    }
+  
+    .portfolio-image-preview {
+    }  
+  
+    .portfolio-description {
+      vertical-align: bottom;
+      max-height: 20px;
+    }
+
+    img {
+      position: relative;
+      display: block;
+      padding-left: 25px;
+      padding-right: 25px;
+      max-width: 350px;
+      max-height: 250px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
 
     h2 {
       @include relative-font-size(1);

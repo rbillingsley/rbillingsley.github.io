@@ -2,45 +2,25 @@
 layout: page
 ---
 <div class="portfolio">
-  {% assign date_format = "%Y" %}
-  {% assign last_post_date = 0 %}
-
-  {{ content }}
-
   <ul class="portfolio-list">
-    {% for post in site.portfolio reversed %}
-      <li>
-        {% assign current_post_date = post.date | date: date_format %}
-        {% if current_post_date != last_post_date %}
-          <span class="portfolio-meta">{{ current_post_date }}</span>
-          {% assign last_post_date = current_post_date %}
-        {% endif %}
-        <h2 class="portfolio-content">
-          <a class="portfolio-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-          <div class="portfolio-tags">
-            {% include tech.html tags=post.tags %}
-          </div>
-          <div class="portfolio-github">
-          {% if post.github-link %}
-            {% include icon-github.html username=site.github_username repo_link=post.github-link %}
-          {% endif %}
-          </div>
-          {% if post.web-link != null %}
-          <div class="portfolio-weblink">
-            {% include icon-rb.html link=post.web-link %} 
-          </div>
-          {% endif %}
-          {% if post.images != null %}
-            <div class="portfolio-image-preview">
-              {% include image.html file=post.images.first max-width="200px" %} 
-            </div>
-          {% endif %}
-          <div class="portfolio-description">
-            {{ post.description }}
-          </div>
-          <a class="portfolio-link-button" href="{{ post.url | relative_url }}">More Info</a>
-        </h2>
-      </li>
+    <div class="portfolio-type">Graphics/Game/Engine</div>
+    {% for entry in site.portfolio reversed %}
+      {% if entry.type == "game" %}
+        {% include portfolio-list.html post=entry %}
+      {% endif  %}
+    {% endfor %}
+    <div class="portfolio-type">App</div>
+    {% for entry in site.portfolio reversed %}
+      {% if entry.type == "app" %}
+        {% include portfolio-list.html post=entry %}
+      {% endif  %}
+    {% endfor %}
+    <div class="portfolio-type">Misc</div>
+    {% for entry in site.portfolio reversed %}
+      {% if entry.type == "misc" %}
+        {% include portfolio-list.html post=entry %}
+      {% endif  %}
     {% endfor %}
   </ul>
+  {{ content }}
 </div>
