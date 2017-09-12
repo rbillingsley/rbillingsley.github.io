@@ -309,6 +309,10 @@
   .portfolio-content {
 
     margin-bottom: 0px;
+
+    .portfolio-description {
+      height: 48px;
+    }
     .portfolio-tags { 
       @include relative-font-size(1);
       color: $grey-color;
