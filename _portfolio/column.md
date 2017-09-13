@@ -5,6 +5,7 @@ date: 2013-5-1
 tags: 
     - C#
     - OpenGL
+    - GLSL
     - OpenTK
 
 type: game

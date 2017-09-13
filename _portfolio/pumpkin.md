@@ -1,6 +1,6 @@
 ---
 layout: portfolio-post
-title: "Halloween Pumpkin Party"
+title: "Pumpkin Party"
 date: 2013-12-1
 tags: 
     - GLSL

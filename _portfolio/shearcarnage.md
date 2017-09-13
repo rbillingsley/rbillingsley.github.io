@@ -1,6 +1,6 @@
 ---
 layout: portfolio-post
-title: "Game Jam Entries"
+title: "Shear Carnage"
 date: 2012-1-1
 tags: 
     - C#
@@ -14,5 +14,5 @@ include: true
 images:
     - "../../assets/images/ttgfeature.jpg"
 
-description: "24hr game jam entries made with a team."
+description: "24hr game jam entry made with a team."
 ---

@@ -1,6 +1,6 @@
 ---
 layout: portfolio-post
-title: "DX11 Sandy Snow Globe"
+title: "Sand Globe"
 date: 2014-1-1
 tags: 
     - C++
@@ -12,8 +12,8 @@ type: game
 include: true
 
 images:
-    - "../../assets/images/globefeature.png"
+    - "../../assets/images/globefeature.jpg"
 
-description: "A DirectX 11 renderer."
+description: "A DirectX 11 graphics project."
 
 ---
