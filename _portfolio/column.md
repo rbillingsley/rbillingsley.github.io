@@ -9,10 +9,10 @@ tags:
 
 type: game
 
-include: false
+include: true
 
 images:
-    - "../../assets/images/place.png"
+    - "../../assets/images/columnfeature.jpg"
 
 description: "A C# OpenGL 3D Graphics program."
 ---
