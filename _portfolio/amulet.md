@@ -8,10 +8,15 @@ tags:
 
 type: app
 
-include: false
+include: true
 
 images:
-    - "../../assets/images/place.png"
+    - "../../assets/images/amuletfeature.png"
 
 description: "An Android app for E-Health reporting."
 ---
+
+
+{% include image.html file="../../assets/images/amuletfeature.png" style="width:400px; position: relative; left: 50%;margin-left: -200px" %} 
+
+Full writeup coming soon.

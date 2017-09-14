@@ -32,6 +32,8 @@ plugins:
   - jekyll-feed
 
 exclude: [vendor]
+
+image-root: ../../assets/images/
   
 collections:
   portfolio:

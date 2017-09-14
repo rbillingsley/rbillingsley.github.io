@@ -18,6 +18,8 @@ images:
     - "../../assets/images/orreryfeature.png"
 ---
 
-{% include image.html max-width="200px" file="/assets/images/arc1.png" %}
+{% include image.html file="../../assets/images/arc1.png" style="width:400px; position: relative; left: 50%;margin-left: -200px" %} 
 
 [Take a look at the Orrery.](https://www.rbill.co.uk/orrery/)
+
+Full writeup coming soon, enjoy the orrery!

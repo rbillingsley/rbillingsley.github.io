@@ -17,3 +17,7 @@ images:
 
 description: "A C# OpenGL 3D Graphics program."
 ---
+
+{% include image.html file="../../assets/images/columnfeature.jpg" style="width:400px; position: relative; left: 50%;margin-left: -200px" %} 
+
+Full writeup coming soon.
