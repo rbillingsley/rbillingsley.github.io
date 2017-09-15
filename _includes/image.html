@@ -1,1 +1,5 @@
-<img class="{{ include.class }}" src="{{ include.file }}" style="{{ include.style }}"/>
+{% if include.link != null%}
+  <a href="{{ include.link }}"><img class="{{ include.class }}" src="{{ include.file }}" style="{{ include.style }}"/></a>
+{% else %}
+  <img class="{{ include.class }}" src="{{ include.file }}" style="{{ include.style }}"/>
+{% endif %}
