@@ -20,7 +20,7 @@ images:
 
 {% include image.html file="../../assets/images/arc1.png" style="width:400px; position: relative; left: 50%;margin-left: -200px" %} 
 
-[Take a look at the Orrery.](https://www.billingsley.dev/orrery/)
+[Take a look at the Orrery.]({{ site.baseurl }}/orrery/)
 
 The Orrery is a project originally developed in 2012 for my second year module "2D Graphics and User Interfaces", the specification was to build a simple graphics application that showed the orbits of the planets within our solar system.
 
