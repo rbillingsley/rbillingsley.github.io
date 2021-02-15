@@ -8,7 +8,6 @@ tags:
     - Liquid
     - HTML
     - CSS/SASS
-    - TravisCI
 
 type: misc
 
