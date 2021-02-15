@@ -17,7 +17,7 @@ images:
     - "../../assets/images/vol2.png"
     - "../../assets/images/vol3.png"
 
-description: "An indirect volume rendering framework for PhD work."
+description: "An \"indirect\" volume rendering framework for PhD work."
 ---
 {% include image.html file="../../assets/images/vol1.png" style="width:400px; position: relative; left: 50%;margin-left: -200px" %} 
  

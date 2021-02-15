@@ -2,6 +2,7 @@
 layout: page
 ---
 <div class="portfolio">
+  {{ content }}
   <div class="portfolio-type">Graphics/Game/Engine</div>
   <ul class="portfolio-list">
     {% for entry in site.portfolio reversed %}
@@ -26,5 +27,4 @@ layout: page
       {% endif  %}
     {% endfor %}
   </ul>
-  {{ content }}
 </div>

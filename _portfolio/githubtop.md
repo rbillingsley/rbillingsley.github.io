@@ -16,7 +16,7 @@ include: true
 images:
     - "../../assets/images/ghtopfeature.png"
 
-description: "App for learning modern web dev."
+description: "App for learning modern web development practices."
 ---
 
 {% include image.html file="../../assets/images/ghtopfeature.png" style="width:400px; position: relative; left: 50%;margin-left: -200px" %} 

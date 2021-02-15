@@ -2,16 +2,19 @@
 <li>
     <h2 class="portfolio-content">
       <a class="portfolio-link" href="{{ include.post.url | relative_url }}">{{ include.post.title | escape }}</a>
+      <div class="portfolio-date">
+        {% include date.html date=include.post.date %}
+      </div>
       <div class="portfolio-tags">
         {% include tech.html tags=include.post.tags %}
       </div>
       <div class="portfolio-description">
-          {{ include.post.description }}
-        </div>
+        {{ include.post.description }}
+      </div>
       {% if include.post.images != null %}
         {% include image.html file=include.post.images.first %} 
       {% endif %}
-      <a class="portfolio-link-button" href="{{ include.post.url | relative_url }}">Read More</a>
+      <a class="portfolio-link-button" href="{{ include.post.url | relative_url }}">...</a>
     </h2>
 </li>
 {% endif %}

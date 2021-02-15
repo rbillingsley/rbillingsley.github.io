@@ -15,7 +15,7 @@ include: true
 images:
     - "../../assets/images/columnfeature.jpg"
 
-description: "A C# OpenGL 3D Graphics program."
+description: "A C# OpenGL 3D Graphics showcase."
 ---
 
 {% include image.html file="../../assets/images/columnportrait.jpg" style="width:200px; position: relative; left: 50%;margin-left: -100px" %} 

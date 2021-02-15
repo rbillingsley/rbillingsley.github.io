@@ -4,4 +4,4 @@ title: Portfolio
 permalink: /portfolio/
 ---
 
-I'm currently in the process of reviewing my previous projects, so this is not an exhaustive list, for an up to date overview of my experience please [consult my CV](../cv/).
+This is a list of educational and hobbyist projects I worked on before becoming a professional developer, for an up-to-date overview of my experience please [consult my CV](../cv/).

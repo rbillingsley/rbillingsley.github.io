@@ -17,7 +17,7 @@ include: true
 images: 
     - "../../assets/images/webfeature.png"
 
-description: "Personal Website built to house CV and portfolio."
+description: "Personal Website built to house my CV and portfolio."
 ---
 
 This website has been built to house my CV, portfolio, contact information, and eventually a blog for technical writing. The design is simple and minimal to focus on the content, this is a slightly altered version of the Jekyll theme "Minima". This website is built using Jekyll and is hosted on GitHub-Pages.

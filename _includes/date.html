@@ -1,0 +1,6 @@
+{% if include.date != null %}
+    <time datetime="{{ date | date_to_xmlschema }}" itemprop="datePublished">
+        {% assign date_format ="%Y" %}
+        {{ include.date | date: date_format }}
+    </time>
+{% endif %}
