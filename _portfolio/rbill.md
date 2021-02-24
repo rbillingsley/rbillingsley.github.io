@@ -19,7 +19,7 @@ images:
 description: "Personal Website built to house my CV and portfolio."
 ---
 
-This website has been built to house my CV, portfolio, contact information, and eventually a blog for technical writing. The design is simple and minimal to focus on the content, this is a slightly altered version of the Jekyll theme "Minima". This website is built using Jekyll and is hosted on GitHub-Pages.
+This website has been built to house my portfolio, contact information, and eventually a blog for technical writing. The design is simple and minimal to focus on the content, this is a slightly altered version of the Jekyll theme "Minima". This website is built using Jekyll and is hosted on GitHub-Pages.
 
 {% include image.html file="../../assets/images/webfeature.png" style="width:400px; position: relative; left: 50%;margin-left: -200px" %} 
 
