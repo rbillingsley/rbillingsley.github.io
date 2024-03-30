@@ -1,4 +1,4 @@
 # rbillingsley.github.io
 My personal website.
 
-[![Build Status](https://travis-ci.org/rbillingsley/rbillingsley.github.io.svg?branch=master)](https://travis-ci.org/rbillingsley/rbillingsley.github.io)
+[![pages-build-deployment](https://github.com/rbillingsley/rbillingsley.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/rbillingsley/rbillingsley.github.io/actions/workflows/pages/pages-build-deployment)
